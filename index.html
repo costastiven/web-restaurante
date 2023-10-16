@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awsome file link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- css file link -->
+  <link rel="stylesheet" href="src/css/styel.css" />
+  <title>Sitio Web Restaurante</title>
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> C.Stiven</a>
+    <nav class="navbar">
+      <a href="#home" class="active">Inicio</a>
+      <a href="#dishes">Platos</a>
+      <a href="#about">Sobre</a>
+      <a href="#menu">Menú</a>
+      <a href="#review">Reseñas</a>
+      <a href="#order">Ordenar</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-btn"></i>
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-shopping-cart" id="cart-btn"></i>
+      <i class="fas fa-heart" id="fav-btn"></i>
+    </div>
+    <!-- search form -->
+    <form action="" class="search-form">
+      <input type="search" id="search-box" placeholder="buscar" />
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <!-- sopping cart -->
+    <div class="shopping-cart">
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="src/img/home-img-1.png" alt="" />
+        <div class="content">
+          <h3>Fideos picantes</h3>
+          <span class="price">$3.99</span>
+          <span class="quantity">Cant : 1</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="src/img/home-img-2.png" alt="" />
+        <div class="content">
+          <h3>Pollo frito</h3>
+          <span class="price">$3.99</span>
+          <span class="quantity">Cant : 1</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="src/img/home-img-3.png" alt="" />
+        <div class="content">
+          <h3>Pizza</h3>
+          <span class="price">$3.99</span>
+          <span class="quantity">Cant : 1</span>
+        </div>
+      </div>
+      <div class="total">total : $10.99</div>
+      <a href="#" class="btn">Verificar</a>
+    </div>
+    <!-- favorite form -->
+    <form action="" class="fav-form">
+      <h3 class="head">Favorito</h3>
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="src/img/home-img-2.png" alt="" />
+        <div class="content">
+          <h3>Pollo frito</h3>
+          <span class="price">$3.99</span>
+          <span class="quantity">Cant : 1</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-trash"></i>
+        <img src="src/img/home-img-3.png" alt="" />
+        <div class="content">
+          <h3>Pizza</h3>
+          <span class="price">$3.99</span>
+          <span class="quantity">Cant : 1</span>
+        </div>
+      </div>
+    </form>
+  </header>
+  <!-- header ends -->
+
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Alimentos mediante un pago <span>fácil</span>.</h3>
+      <p>
+        Facilitamos la adquisición de alimentos a través de opciones de pago sencillas y convenientes,
+        para que disfrutes de una experiencia de compra sin complicaciones.
+      </p>
+      <a href="#order" class="btn">Ordenar Ahora</a>
+    </div>
+  </section>
+  <!-- home section ends -->
+
+  <!-- dish section start -->
+  <section class="dishes" id="dishes">
+    <h3 class="sub-heading">Nuestros Platos</h3>
+    <h1 class="heading">Platos <span>Especiales</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="src/img/dish-1.png" alt="" />
+        <h3>Hamburguesa</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>$4.99</span>
+        <a href="#" class="btn">Agregar al carrito</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="src/img/dish-2.png" alt="" />
+        <h3>Nuggets</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>$4.99</span>
+        <a href="#" class="btn">Agregar al carrito</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="src/img/dish-3.png" alt="" />
+        <h3>Pollo Horneado</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>$4.99</span>
+        <a href="#" class="btn">Agregar al carrito</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="src/img/dish-4.png" alt="" />
+        <h3>Pizza</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>$4.99</span>
+        <a href="#" class="btn">Agregar al carrito</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="src/img/dish-5.png" alt="" />
+        <h3>Postre</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>$4.99</span>
+        <a href="#" class="btn">Agregar al carrito</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="src/img/dish-6.png" alt="" />
+        <h3>Pollo apanado</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>$4.99</span>
+        <a href="#" class="btn">Agregar al carrito</a>
+      </div>
+    </div>
+  </section>
+  <!-- dish section ends -->
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <h3 class="sub-heading">Sobre nosotros</h3>
+    <h1 class="heading">¿Por qué <span>elegirnos</span>?</h1>
+    <div class="row">
+      <div class="image">
+        <img src="src/img/about-img.png" alt="" />
+      </div>
+      <div class="content">
+        <h3>La mejor comida del país.</h3>
+        <p>
+          Saborea y disfruta de una experiencia culinaria inigualable con nuestra deliciosa y variada selección de
+          platos.
+          En cada bocado, encontrarás la esencia y los sabores auténticos que hacen de nuestra comida la mejor del país.
+        </p>
+        <p>
+          Te invitamos a explorar nuestros exquisitos menús y descubrir por qué somos reconocidos como los expertos en
+          gastronomía de la nación.
+        </p>
+        <div class="icons-container">
+          <div class="icons">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Entrega rápida</span>
+          </div>
+          <div class="icons">
+            <i class="fas fa-dollar-sign"></i>
+            <span>Pago fácil</span>
+          </div>
+          <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>Servicio 24/7</span>
+          </div>
+        </div>
+        <a href="#" class="btn">Más info.</a>
+      </div>
+    </div>
+    <!-- about section ends -->
+  </section>
+
+  <!-- menu section start -->
+  <section class="menu" id="menu">
+    <h3 class="sub-heading">Nuestro menú</h3>
+    <h1 class="heading">La <span>especialidad</span> del día</h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-1.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Hamburguesa</h3>
+          <p>
+            Jugosa hamburguesa hecha con carne de alta calidad y se sirve en un suave pan.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-2.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Postre</h3>
+          <p>
+            Helado con chocolate derretido y waffle es un placer dulce y cremoso.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-3.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Pizza</h3>
+          <p>
+            Una deliciosa pizza con aceitunas negras, queso derretido, tomates y cebolla.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-4.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Postre</h3>
+          <p>
+            Deliciosas tortillas con arándanos untadas con miel y azúcar impalpable.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-5.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Hamburguesa</h3>
+          <p>
+            Carne sabrosa en un delicioso pan con ingredientes frescos y salsas especiales.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-6.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Pizza</h3>
+          <p>
+            Deliciosa pizza con salame, salsa de tomate y queso derretido.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-7.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Postre</h3>
+          <p>
+            Un caprichoso cupcake con chispas de chocolate, perfecto para endulzar tu día.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-8.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Postre</h3>
+          <p>
+            Delicioso cupcake de chocolate, con crema batida y chispas.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="src/img/menu-9.jpg" alt="" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Burrito</h3>
+          <p>
+            Delicioso y saciante, nuestro burrito es un abrazo de sabor en cada mordisco.
+          </p>
+          <a href="#" class="btn">Al Carrito</a>
+          <span>$4.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- menu section ends -->
+
+  <!-- review section start -->
+  <section class="review" id="review">
+    <h1 class="heading">Las <span>reseñas</span> de nuestros clientes</h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="src/img/pic-1.png" alt="" />
+        <h3>Ana López</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Experiencia maravillosa en este restaurante, la comida y el servicio son excelentes.
+        </p>
+      </div>
+      <div class="box">
+        <img src="src/img/pic-2.png" alt="" />
+        <h3>Sara García</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Mi sitio de referencia para disfrutar de comida deliciosa y un servicio rápido.
+        </p>
+      </div>
+      <div class="box">
+        <img src="src/img/pic-3.png" alt="" />
+        <h3>Luis Pérez</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          Una experiencia culinaria excepcional, este lugar es un tesoro gastronómico.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- review section ends -->
+
+  <!-- order section start -->
+  <section class="order" id="order">
+    <h1 class="heading"><span>Ordenar</span> ahora</h1>
+    <div class="row">
+      <div class="image">
+        <img src="src/img/waiter.jpg" alt="" />
+      </div>
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="email" placeholder="ejemplo@gmail.com" required />
+        </div>
+        <div class="inputBox">
+          <input type="number" placeholder="Número" required />
+          <input type="text" placeholder="Nombre del plato" required />
+        </div>
+        <textarea placeholder="Dirección" name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Ordenar ahora" class="btn" />
+      </form>
+    </div>
+  </section>
+  <!-- order section ends -->
+
+  <!-- footer start -->
+  <footer class="footer" id="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Ubicación</h3>
+        <a href="#">Buenos Aires</a>
+        <a href="#">Salta</a>
+        <a href="#">Mendoza</a>
+        <a href="#">Formosa</a>
+        <a href="#">Entre Rios</a>
+      </div>
+      <div class="box">
+        <h3>Enlaces rápidos</h3>
+        <a href="#home">Inicio</a>
+        <a href="#dishes">Platos</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menú</a>
+        <a href="#review">Reseñas</a>
+        <a href="#order">Ordenar</a>
+      </div>
+      <div class="box">
+        <h3>Datos de contacto</h3>
+        <a href="#">+5555 555 555</a>
+        <a href="#">+5555 555 555</a>
+        <a href="#">+5555 555 555</a>
+        <a href="#">ejemolo@gmail.com</a>
+        <a href="#">ejemplo@gmail.com</a>
+      </div>
+      <div class="box">
+        <h3>Síguenos</h3>
+        <a href="#">facebook</a>
+        <a href="#">twitter</a>
+        <a href="#">intagram</a>
+        <a href="#">linkedin</a>
+      </div>
+    </div>
+    <div class="credit">
+      © Derechos de autor @ 2023 diseñado por: <span>Costa Stiven</span>
+    </div>
+  </footer>
+  <!-- footer ends -->
+
+  <!-- scroll btn -->
+  <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+  <!-- js file link -->
+  <script src="src/script/script.js"></script>
+</body>
+
+</html>
